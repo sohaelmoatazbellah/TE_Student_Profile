@@ -1,4 +1,6 @@
 import React, { useState, useCallback, useMemo, useRef, useEffect } from 'react';
+import Logo from '/src/assets/Logo.png';
+import profileImg from './assets/profile.png';
 import {
   Bell,
   User,
@@ -1664,7 +1666,7 @@ const ExamsPage = ({ onStartExam }) => {
 export default function App() {
   const [activePage, setActivePage] = useState('profile');
   const [isExamActive, setIsExamActive] = useState(false);
-  const studentData = useMemo(() => ({ name: 'Mohamed Ahmed Ali', img: '/src/assets/profile.png' }), []);
+  const studentData = useMemo(() => ({ name: 'Mohamed Ahmed Ali', img: profileImg }), []);
 
   if (isExamActive) return <ExamInterface onExamComplete={() => { setIsExamActive(false); setActivePage('profile'); }} />;
 
@@ -1811,7 +1813,7 @@ export default function App() {
 
       <header className="top-header">
         <div className="header-left">
-          <img src="/src/assets/Logo.png" alt="Logo" className="logo-img" />
+          <img src={Logo} alt="Logo" className="logo-img" />
           <div className="logo-text"><span className="logo-truth">Truth</span><span className="logo-eye">Eye</span></div>
         </div>
         <div className="header-right">
