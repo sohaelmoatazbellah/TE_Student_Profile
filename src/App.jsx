@@ -1,5 +1,5 @@
 import React, { useState, useCallback, useMemo, useRef, useEffect } from 'react';
-import Logo from '/src/assets/Logo.png';
+import Logo from './assets/Logo.png';
 import profileImg from './assets/profile.png';
 import {
   Bell,
