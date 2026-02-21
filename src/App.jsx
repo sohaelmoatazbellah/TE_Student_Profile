@@ -414,7 +414,7 @@ const ExamInterface = ({ onExamComplete }) => {
           <p className="exam-subject-sub">Midterm Examination</p>
         </div>
         <div className="exam-logo">
-          <img src="/src/assets/Logo.png" alt="Logo" style={{ width:'100%', height:'100%', objectFit:'cover', borderRadius:'50%' }} />
+          <img src={Logo} alt="Logo" style={{ width:'100%', height:'100%', objectFit:'cover', borderRadius:'50%' }} />
         </div>
       </header>
 
