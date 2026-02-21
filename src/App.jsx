@@ -105,7 +105,7 @@ const ChangePasswordModal = ({ onClose }) => {
 
 const ProfilePage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const studentData = { name: 'Mohamed Ahmed Ali', id: '2024-12345', img: '/src/assets/profile.png' };
+  const studentData = { name: 'Mohamed Ahmed Ali', id: '2024-12345', img: profileImg };
   return (
     <main className="main-content scrollable">
       <div className="profile-container">
